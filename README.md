@@ -1,4 +1,4 @@
-# MyWebsite# Jennifer Yu - Personal Website
+# Jennifer Yu - Personal Website
 
 Hey there! This is my personal portfolio website briefing my current projects and research foci.
 
@@ -11,8 +11,8 @@ Political Science and Economics student at Northeastern University.
 - Responsive layout
 
 ## View My Website
-[Click here to visit my site]([(https://jenniferxyu.github.io/MyWebsite/))
+[Click here to visit my site](https://jenniferxyu.github.io/MyWebsite/)
 
 ## Contact
 - Email: yu.jenni@northeastern.edu
-- LinkedIn: https://www.linkedin.com/in/jy-jenniferyu/ 
+- LinkedIn: [My LinkedIn Profile](https://www.linkedin.com/in/jy-jenniferyu/)
