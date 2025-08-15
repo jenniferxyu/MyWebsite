@@ -11,7 +11,7 @@ Political Science and Economics student at Northeastern University.
 - Responsive layout
 
 ## View My Website
-[Click here to visit my site](https://yourusername.github.io/MyWebsite)
+[Click here to visit my site]([(https://jenniferxyu.github.io/MyWebsite/))
 
 ## Contact
 - Email: yu.jenni@northeastern.edu
