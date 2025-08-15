@@ -112,9 +112,9 @@ body {
     padding-bottom: 30px;
 }
 
-/* NAME CONTAINER STYLING */
-.name-container {
-    margin-bottom: 10px;
+/* COMBINED NAME AND EDUCATION CONTAINER */
+.name-education-container {
+    margin-bottom: 30px; /* Space between this section and about section */
     padding: 0;
 }
 
@@ -127,22 +127,20 @@ body {
     font-weight: 600;
     letter-spacing: -0.01em;
     -webkit-font-smoothing: antialiased;
-}
-
-/* EDUCATION CONTAINER STYLING */
-.education-container {
-    padding: 0;
+    margin: 0; /* Remove default h1 margins */
+    margin-bottom: 5px; /* Small space between name and education */
 }
 
 /* EDUCATION STYLING */
 .education-info {
     color: #131314;
     font-family: -apple-system, BlinkMacSystemFont, "SF Pro Rounded", "SF Pro Text", "Segoe UI", system-ui, sans-serif;
-    font-size: 1.1rem;
+    font-size: 1.15rem;
     text-align: left;
-    font-weight: 400;
+    font-weight: 450;
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
+    margin: 0; /* Remove default paragraph margins */
 }
 
 /* ABOUT CONTAINER STYLING */
@@ -151,7 +149,8 @@ body {
 }
 
 .about-text {
-    color: #495057;
+    padding-right: 50px; /* Right padding */
+    color: #030303;
     font-family: -apple-system, BlinkMacSystemFont, "SF Pro Rounded", "SF Pro Text", "Segoe UI", system-ui, sans-serif;
     font-size: 1rem;
     line-height: 1.6;
