@@ -1,6 +1,6 @@
 # Jennifer Yu - Personal Website
 
-Hey there! This is my personal portfolio website briefing my current projects and research foci.
+Hey there! This is my personal website briefing my current projects and research foci.
 
 ## About Me
 Political Science and Economics student at Northeastern University.
