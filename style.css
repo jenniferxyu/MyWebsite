@@ -1,0 +1,209 @@
+/* BACKGROUND STYLING */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Rounded", "SF Pro Display", "Segoe UI", system-ui, sans-serif;
+    font-feature-settings: "kern" 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: whitesmoke;    
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 1.6;
+    color: #333;
+    min-height: 100vh;
+}
+
+/* MAIN CONTAINER - SIDE BY SIDE LAYOUT */
+.main-container {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+/* PROFILE PHOTO CONTAINER */
+.profile-container {
+    flex: 0 0 300px; /* Fixed width, doesn't grow or shrink */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding-top: 40px;
+    padding-left: 200px;
+    padding-right: 20px;
+}
+
+/* PROFILE PHOTO STYLING */
+.profile-photo-container {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #e9ecef;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 20px rgba(22, 21, 21, 0.1);
+}
+
+.profile-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* If no image is available, show placeholder */
+.profile-photo-container:empty::before {
+    content: "📸";
+    font-size: 4rem;
+    color: #6c757d;
+}
+
+/* SOCIAL MEDIA SIDEBAR - HORIZONTAL LAYOUT (Only LinkedIn and Email) */
+.social-media-sidebar {
+    display: flex;
+    flex-direction: row; /* This makes them horizontal/side-by-side */
+    gap: 20px;
+    align-items: center;
+}
+
+.social-link-sidebar {
+    width: 55px; /* Slightly larger since only 2 icons */
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: 1px solid #e9ecef;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.social-link-sidebar:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* LinkedIn hover effect */
+.social-link-sidebar.linkedin:hover {
+    background-color: #0077b5;
+    border-color: #0077b5;
+}
+
+/* Email hover effect */
+.social-link-sidebar.email:hover {
+    background-color: #ea4335;
+    border-color: #ea4335;
+}
+
+.social-link-sidebar .social-icon {
+    font-size: 1.4rem; /* Slightly larger icons */
+}
+
+/* RIGHT CONTAINER - BIOGRAPHY INFORMATION */
+.biography {
+    flex: 1; /* Takes up remaining space */
+    background: transparent;
+    border-radius: 12px;
+    padding-top: 30px;
+    padding-right: 60px; /* Extra padding for the right side */
+    padding-left: 30px;
+    padding-bottom: 30px;
+}
+
+/* NAME CONTAINER STYLING */
+.name-container {
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+/* NAME TITLE STYLING */
+.name-title {
+    color: #1d1d1f;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Rounded", "SF Pro Display", "Segoe UI", system-ui, sans-serif;
+    font-size: 2.5rem;
+    text-align: left;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* EDUCATION CONTAINER STYLING */
+.education-container {
+    padding: 0;
+}
+
+/* EDUCATION STYLING */
+.education-info {
+    color: #131314;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Rounded", "SF Pro Text", "Segoe UI", system-ui, sans-serif;
+    font-size: 1.1rem;
+    text-align: left;
+    font-weight: 400;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* ABOUT CONTAINER STYLING */
+.about-container {
+    padding: 0;
+}
+
+.about-text {
+    color: #495057;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Rounded", "SF Pro Text", "Segoe UI", system-ui, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: left;
+    margin: 0;
+}
+
+/* HEADER AND SECTION RESET */
+.main-header {
+    margin: 0;
+    padding: 0;
+}
+
+.education {
+    margin: 0;
+    padding: 0;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .profile-container {
+        flex: none;
+        width: 100%;
+        padding-left: 0; /* Remove extra left padding on mobile */
+    }
+    
+    .profile-photo-container {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .social-media-sidebar {
+        flex-direction: row;
+        gap: 15px; /* Horizontal spacing for mobile */
+    }
+    
+    .social-link-sidebar {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .biography {
+        padding: 30px 20px;
+        padding-right: 40px;
+    }
+    
+    .name-title {
+        font-size: 2rem;
+    }
+}
